@@ -1,0 +1,38 @@
+{
+  "name": "inherelab/php-pkg-template",
+  "description": "TODO: package description",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/inherelab/php-pkg-template",
+  "keywords": [
+    "library",
+    "tool"
+  ],
+  "authors": [
+    {
+      "name": "inhere",
+      "email": "in.798@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">7.4.0",
+    "ext-mbstring": "*",
+    "toolkit/stdlib":"~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "InhereLab\\DemoPkg\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "InhereLab\\DemoPkgTest\\": "test/"
+    }
+  },
+  "bin": [
+
+  ],
+  "scripts": {
+    "test": "php vender/bin/phpunit"
+  }
+}

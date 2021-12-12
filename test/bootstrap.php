@@ -8,8 +8,8 @@ date_default_timezone_set('Asia/Shanghai');
 
 $libDir = dirname(__DIR__);
 $npMap  = [
-    'InhereLab\\DemoPkgTest\\' => $libDir . '/test/',
-    'InhereLab\\DemoPkg\\'     => $libDir . '/src/',
+    'PhpPkg/TaskPMTest\\' => $libDir . '/test/',
+    'PhpPkg/TaskPM\\'     => $libDir . '/src/',
 ];
 
 spl_autoload_register(static function ($class) use ($npMap) {

@@ -1,13 +1,14 @@
 <?php
 
-use PhpComLab\CliMarkdown\CliMarkdown;
+use PhpPkg\TaskPM\TaskManager;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__) . '/test/bootstrap.php';
 
-$contents = file_get_contents(dirname(__DIR__) . '/README.md');
-$praser = new CliMarkdown;
+TaskManager::new()
+    ->onMaster(function () {
 
-$rendered = $praser->render($contents);
+    })
+    ->onWorker(function () {
 
-echo $rendered;
-
+    })
+    ->wait();

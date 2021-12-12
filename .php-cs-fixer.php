@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<'EOF'
-This file is part of inherelab/php-pkg-template.
+This file is part of phppkg/taskpm.
 
 @link     https://github.com/inhere
 @author   https://github.com/inhere
